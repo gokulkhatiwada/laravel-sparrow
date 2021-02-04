@@ -1,0 +1,37 @@
+{
+    "name": "aankhijhyaal/laravel-sparrow",
+    "description": "SparrowSMS notification channel for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gokul Khatiwada",
+            "email": "gokulkhatiwada91@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "9999999-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aankhijhyaal\\LaraSparrow\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aankhijhyaal\\LaraSparrow\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aankhijhyaal\\LaraSparrow\\LaraSparrowServiceProvider"
+            ]
+        }
+    }
+}
